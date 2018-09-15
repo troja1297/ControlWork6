@@ -13,7 +13,7 @@ namespace FirstWebApp
     {
         public DbSet<Institution> Institutions { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Client> Clents { get; set; }
+        public DbSet<Client> Clients { get; set; }
         public DbSet<Dish> Dishes { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

@@ -8,12 +8,16 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="FirstWebApp" t="IncludeRecursive">
         <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="ClientTest.html" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="ClientController.cs" t="Include" />
           <e p="DishController.cs" t="Include" />
+          <e p="InstitutionsController.cs" t="Include" />
           <e p="OrderController.cs" t="Include" />
         </e>
         <e p="DishTest.html" t="Include" />
         <e p="FirstWebApp.csproj" t="IncludeRecursive" />
+        <e p="InstitutionsTest.html" t="Include" />
         <e p="Migrations" t="Include">
           <e p="20180915110438_Initial.Designer.cs" t="Include" />
           <e p="20180915110438_Initial.cs" t="Include" />

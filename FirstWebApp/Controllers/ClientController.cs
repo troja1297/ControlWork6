@@ -8,40 +8,39 @@ namespace FirstWebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderController : ControllerBase
+    public class ClientController : ControllerBase
     {
         private readonly ApplicationDbContext context;
 
         
-        public OrderController(ApplicationDbContext context)
+        public ClientController(ApplicationDbContext context)
         {
             this.context = context;
         }
 
         // GET: api/Product
         [HttpGet]
-        public string GetOrders()
+        public string GetClients()
         {
-            var products = context.Orders.ToList();
+            var products = context.Clients.ToList();
             return JsonConvert.SerializeObject(products, Formatting.Indented);
         }
 
         // GET: api/Product/5
-        [HttpGet("{id}", Name = "GetOrders")]
-        public string GetOrders(int id)
+        [HttpGet("{id}", Name = "GetClients")]
+        public string GetClients(int id)
         {
             return "value";
         }
 
         // POST: api/Product
         [HttpPost]
-        public string GetOrders([FromForm] Order product)
+        public string GetClients([FromForm] Client product)
         {
-            product.Date = DateTime.Now;
-            context.Orders.Add(product);
+            context.Clients.Add(product);
             context.SaveChanges();
 
-            return GetOrders();
+            return GetClients();
         }
 
 
