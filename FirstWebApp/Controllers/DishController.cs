@@ -1,63 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using ConsoleAppWithDb.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-
-
 
 namespace FirstWebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class DishController : ControllerBase
     {
         private readonly ApplicationDbContext context;
 
-        public ProductController(ApplicationDbContext context)
+        public DishController(ApplicationDbContext context)
         {
             this.context = context;
         }
 
         // GET: api/Product
         [HttpGet]
-        public string GetProducts()
+        public string GetDishes()
         {
             var products = context.Dishes.ToList();
             return JsonConvert.SerializeObject(products, Formatting.Indented);
         }
 
         // GET: api/Product/5
-        [HttpGet("{id}", Name = "GetProducts")]
-        public string GetProducts(int id)
+        [HttpGet("{id}", Name = "GetDishes")]
+        public string GetDishes(int id)
         {
             return "value";
         }
 
         // POST: api/Product
         [HttpPost]
-        public string PostProducts([FromForm] Dish product)
+        public string GetDishes([FromForm] Dish product)
         {
             context.Dishes.Add(product);
             context.SaveChanges();
 
-            return GetProducts();
+            return GetDishes();
         }
 
-        // PUT: api/Product/5
-        [HttpPut("{id}")]
-        public void PutProduct(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void DeleteProduct(int id)
-        {
-        }
+        
 
         private string GetHtmlPage(string content)
         {

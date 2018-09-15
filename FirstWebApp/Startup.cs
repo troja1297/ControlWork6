@@ -19,7 +19,7 @@ namespace FirstWebApp
             services.AddMvc();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(@"Server=.\SQLEXPRESS;Database=myShop;Trusted_Connection=True;"));
+                options.UseSqlServer(@"Data Source=.; Database=myShop; User Id =SA; Password =Tromb1297;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

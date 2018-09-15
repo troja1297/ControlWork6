@@ -8,37 +8,42 @@ namespace ConsoleAppWithDb.Models
 {
     public class Institution : Entity
     {
-        public int Id { get; set; }
+        [FromForm (Name = "description")]
         public string Description { get; set; }
+        [FromForm (Name = "name")]
         public string Name { get; set; }
     }  
     
     public class Dish : Entity
     {
-        public int Id { get; set; }
+        [FromForm (Name = "description")]
         public string Description { get; set; }
+        [FromForm (Name = "name")]
         public string Name { get; set; }
+        [FromForm (Name = "price")]
         public decimal Price { get; set; }
         
         [ForeignKey("Institution")]
+        [FromForm (Name = "cafeId")]
         public int InstitutionId { get; set; }
     }  
     
     public class Client : Entity
     {
-        public int Id { get; set; }
+        [FromForm (Name = "contact")]
         public string Contact { get; set; }
+        [FromForm (Name = "name")]
         public string Name { get; set; }
     }  
     
     public class Order : Entity
     {
-        public int Id { get; set; }
         public DateTime Date { get; set; }
         
-        [ForeignKey("Client")]
+        [ForeignKey("Institution")]
         [FromForm (Name = "cafeId")]
-        public int ClientId { get; set; }
+        public int CafeId { get; set; }
+        
         [ForeignKey("Dish")]
         [FromForm (Name = "dishId")]
         public int DishId { get; set; }

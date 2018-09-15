@@ -3,24 +3,28 @@
     "Id": 1,
     "Name": "Пельмени1",
     "Description": "Пельмени1Пельмени1",
+    "Price": "100.0",
     "InstitutionId": 2
   },
   {
     "Id": 2,
     "Name": "Пельмени2",
     "Description": "Пельмени2Пельмени2",
+    "Price": "200.0",
     "InstitutionId": 3
   },
   {
     "Id": 3,
     "Name": "Пельмени3",
     "Description": "Пельмени3Пельмени3",
+    "Price": "300.0",
     "InstitutionId": 2
   },
   {
     "Id": 4,
     "Name": "Пельмени4",
     "Description": "Пельмени4Пельмени4",
+    "Price": "400.0",
     "InstitutionId": 1
   }
 ]

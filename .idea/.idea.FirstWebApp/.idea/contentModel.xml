@@ -9,15 +9,23 @@
       <e p="FirstWebApp" t="IncludeRecursive">
         <e p="ApplicationDbContext.cs" t="Include" />
         <e p="Controllers" t="Include">
-          <e p="DefaultController.cs" t="Include" />
-          <e p="ProductController.cs" t="Include" />
+          <e p="DishController.cs" t="Include" />
+          <e p="OrderController.cs" t="Include" />
         </e>
+        <e p="DishTest.html" t="Include" />
         <e p="FirstWebApp.csproj" t="IncludeRecursive" />
-        <e p="Migrations" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20180915110438_Initial.Designer.cs" t="Include" />
+          <e p="20180915110438_Initial.cs" t="Include" />
+          <e p="20180915112538_test1.Designer.cs" t="Include" />
+          <e p="20180915112538_test1.cs" t="Include" />
+          <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Entity.cs" t="Include" />
           <e p="Institution.cs" t="Include" />
         </e>
+        <e p="OrderTest.html" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -30,7 +38,6 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="index.html" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.1" t="Include">
@@ -38,7 +45,6 @@
             </e>
           </e>
         </e>
-        <e p="text.txt" t="Include" />
         <e p="wwwroot" t="Include" />
       </e>
       <e p="FirstWebApp.sln" t="IncludeFlat" />
