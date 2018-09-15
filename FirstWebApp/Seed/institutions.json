@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Кафе1",
+    "Description": "cafe1"
+  },
+  {
+    "Id": 2,
+    "Name": "Кафе2",
+    "Description": "cafe2"
+  },
+  {
+    "Id": 3,
+    "Name": "Кафе3",
+    "Description": "cafe3"
+  },
+  {
+    "Id": 4,
+    "Name": "Кафе4",
+    "Description": "cafe4"
+  }
+]
